@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function nguyenTo(n) {
+        for (let i = 2; i <= Number.parseInt(Math.sqrt(n)); i++) {
+            let prime = true;
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    let number = parseInt(prompt("nhap so"));
+    let n = 2;
+    let count = 0;
+    while (count < number) {
+        if (nguyenTo(n)) {
+            console.log(n);
+            count++;
+        }
+        n++;
+    }
+</script>
+
+</body>
+</html>
