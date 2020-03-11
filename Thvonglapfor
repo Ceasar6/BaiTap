@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--<h1>javascript loop</h1>
+<p id="demo"></p>
+<script>
+    let text = "";
+    let i;
+    for (i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+
+</script>-->
+<script>
+    let n=parseInt(prompt("nhap n: "));
+    let tong=0;
+    if (n<0){
+        alert(" nhap lai");
+    }else {
+        for (let i= 1; i<=n;i++){
+            tong+=i;
+        }
+        alert("tong=" +tong);
+    }
+</script>
+<body>
+
+</body>
+</html>
